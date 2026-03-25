@@ -2,6 +2,7 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import Image from "next/image";
+import NavLinks from "@/app/components/NavLinks";
 
 function hasLogo(): boolean {
   try {
@@ -46,6 +47,14 @@ export default function Header() {
         <span className="text-white text-sm font-medium tracking-wide uppercase opacity-80 hidden sm:block">
           Transparência Corporativa
         </span>
+      </div>
+
+      {/* Linha inferior: menu de navegação */}
+      <div
+        className="max-w-5xl mx-auto px-6 pb-0"
+        style={{ borderTop: "1px solid rgba(255,255,255,0.15)" }}
+      >
+        <NavLinks />
       </div>
     </header>
   );
