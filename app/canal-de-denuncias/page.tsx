@@ -13,51 +13,129 @@ export default function CanalDeDenuncias() {
         style={{ minHeight: "calc(100vh - 130px)" }}
       >
         {/* Hero */}
-        <section className="max-w-5xl mx-auto w-full px-6 pt-10 pb-6 text-center">
+        <section className="max-w-4xl mx-auto w-full px-6 pt-10 pb-8">
           <h1
-            className="text-3xl sm:text-4xl font-bold mb-3 leading-tight"
+            className="text-3xl sm:text-4xl font-bold mb-2 leading-tight"
             style={{ color: "var(--brand-blue)" }}
           >
             Canal de Denúncias
           </h1>
           <p
-            className="text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-5"
+            className="text-xl font-semibold mb-6"
+            style={{ color: "var(--brand-orange)" }}
+          >
+            Fale com segurança. Sua voz importa.
+          </p>
+          <p
+            className="text-base leading-relaxed mb-8"
             style={{ color: "var(--brand-muted)" }}
           >
-            Utilize este canal para reportar, de forma sigilosa e segura,
-            condutas que violem o Código de Ética, as políticas internas ou a
-            legislação vigente. Todas as comunicações são tratadas com
-            confidencialidade.
+            A Ideias Turismo mantém um canal de denúncias estruturado para
+            garantir que qualquer pessoa — colaborador, parceiro ou cidadão —
+            possa relatar situações de forma segura, responsável e, se desejar,
+            totalmente anônima.
+          </p>
+          <p
+            className="text-base leading-relaxed mb-4"
+            style={{ color: "var(--brand-muted)" }}
+          >
+            Sabemos que denunciar nem sempre é uma decisão fácil. Por isso,
+            este canal foi desenvolvido para assegurar um ambiente de
+            confiança, onde sua manifestação será tratada com:
           </p>
 
-          {/* Botão de acesso direto */}
-          <a
-            href={CANAL_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold transition-opacity hover:opacity-90"
-            style={{
-              backgroundColor: "var(--brand-orange)",
-              color: "#ffffff",
-            }}
+          {/* Garantias */}
+          <ul className="mb-8 space-y-3">
+            {[
+              {
+                title: "Confidencialidade absoluta",
+                desc: "suas informações são protegidas e acessadas apenas por pessoas autorizadas",
+              },
+              {
+                title: "Possibilidade de anonimato",
+                desc: "você pode registrar sua denúncia sem se identificar",
+              },
+              {
+                title: "Imparcialidade na apuração",
+                desc: "todos os relatos são analisados com independência e critérios técnicos",
+              },
+              {
+                title: "Proteção contra retaliações",
+                desc: "não é permitido qualquer tipo de retaliação contra quem relata uma preocupação de boa-fé",
+              },
+            ].map((item) => (
+              <li key={item.title} className="flex items-start gap-3">
+                <span
+                  className="mt-1 flex-shrink-0 w-2 h-2 rounded-full"
+                  style={{ backgroundColor: "var(--brand-orange)" }}
+                />
+                <span
+                  className="text-sm leading-relaxed"
+                  style={{ color: "var(--brand-muted)" }}
+                >
+                  <strong style={{ color: "var(--brand-text)" }}>
+                    {item.title}:
+                  </strong>{" "}
+                  {item.desc}
+                </span>
+              </li>
+            ))}
+          </ul>
+
+          <p
+            className="text-base leading-relaxed mb-4"
+            style={{ color: "var(--brand-muted)" }}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="w-4 h-4"
-              aria-hidden="true"
-            >
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-              <polyline points="15 3 21 3 21 9" />
-              <line x1="10" y1="14" x2="21" y2="3" />
-            </svg>
-            Abrir canal em nova aba
-          </a>
+            Este canal deve ser utilizado para comunicar situações como:
+          </p>
+
+          {/* Situações */}
+          <ul className="mb-8 space-y-2">
+            {[
+              "Condutas antiéticas ou inadequadas",
+              "Suspeitas de fraude, corrupção ou irregularidades",
+              "Assédio moral ou sexual",
+              "Descumprimento de normas internas ou da legislação",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3">
+                <span
+                  className="mt-1 flex-shrink-0 w-2 h-2 rounded-full"
+                  style={{ backgroundColor: "var(--brand-blue)" }}
+                />
+                <span
+                  className="text-sm leading-relaxed"
+                  style={{ color: "var(--brand-muted)" }}
+                >
+                  {item}
+                </span>
+              </li>
+            ))}
+          </ul>
+
+          <p
+            className="text-base leading-relaxed mb-4"
+            style={{ color: "var(--brand-muted)" }}
+          >
+            Após o registro, sua manifestação será analisada por equipe
+            responsável, seguindo um processo estruturado de apuração,
+            garantindo seriedade, sigilo e tratamento adequado de cada caso.
+          </p>
+
+          <p
+            className="text-base leading-relaxed mb-2"
+            style={{ color: "var(--brand-muted)" }}
+          >
+            Se você presenciou ou tem conhecimento de alguma situação que não
+            esteja de acordo com nossos valores ou com a lei, não ignore.
+          </p>
+
+          <p
+            className="text-base font-semibold"
+            style={{ color: "var(--brand-blue)" }}
+          >
+            Sua atitude contribui para um ambiente mais ético, seguro e
+            transparente para todos.
+          </p>
         </section>
 
         {/* iframe */}
