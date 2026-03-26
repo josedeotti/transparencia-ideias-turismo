@@ -7,6 +7,7 @@ const navItems = [
   { label: "Políticas Corporativas", href: "/" },
   { label: "Programa de Equidade de Gênero", href: "/equidade-de-genero" },
   { label: "Organograma", href: "/organograma" },
+  { label: "Canal de Denúncias", href: "/canal-de-denuncias" },
 ];
 
 export default function NavLinks() {
