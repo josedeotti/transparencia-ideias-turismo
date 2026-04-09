@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Transparência | Ideias Turismo",
   description:
     "Acesse as políticas corporativas da Ideias Turismo: Código de Ética, Programa de Integridade, Políticas de Combate à Corrupção, Medidas Disciplinares, Privacidade de Dados e Regimento do Comitê de Ética.",
+  icons: {
+    icon: "/logo.png",
+  },
   openGraph: {
     title: "Transparência | Ideias Turismo",
     description: "Políticas corporativas da Ideias Turismo.",
