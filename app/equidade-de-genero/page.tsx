@@ -2,7 +2,40 @@ import Header from "@/app/components/Header";
 import PolicyCard from "@/app/components/PolicyCard";
 
 const policies: Array<{ title: string; description: string; href: string }> = [
-  // Adicionar os documentos aqui conforme disponibilizados
+  {
+    title: "Política Corporativa de Equidade de Gênero, Diversidade e Inclusão",
+    description:
+      "Diretrizes para a promoção da equidade de gênero, diversidade e inclusão no ambiente de trabalho.",
+    href: "/equidade-de-genero/equidade-genero-diversidade-inclusao.pdf",
+  },
+  {
+    title:
+      "Política Corporativa de Não Discriminação e Igualdade de Oportunidades",
+    description:
+      "Princípios e práticas que garantem tratamento igualitário e vedação a qualquer forma de discriminação.",
+    href: "/equidade-de-genero/nao-discriminacao-igualdade-oportunidades.pdf",
+  },
+  {
+    title:
+      "Política Corporativa de Parentalidade, Licenças e Equilíbrio Trabalho-Vida",
+    description:
+      "Diretrizes sobre licenças parentais e medidas de apoio ao equilíbrio entre vida pessoal e profissional.",
+    href: "/equidade-de-genero/parentalidade-licencas-equilibrio.pdf",
+  },
+  {
+    title:
+      "Política Corporativa de Prevenção ao Assédio, Violência e Proteção à Integridade",
+    description:
+      "Normas de prevenção e combate ao assédio e à violência, assegurando a integridade de todos.",
+    href: "/equidade-de-genero/prevencao-assedio-violencia.pdf",
+  },
+  {
+    title:
+      "Carta de Compromisso da Direção ao Women's Empowerment Principles",
+    description:
+      "Declaração formal da liderança com os Princípios de Empoderamento das Mulheres (WEPs).",
+    href: "/equidade-de-genero/carta-compromisso-wep.pdf",
+  },
 ];
 
 export default function EquidadeDeGenero() {
